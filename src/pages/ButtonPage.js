@@ -1,7 +1,7 @@
 import { GoBell, GoCloudDownload, GoDashboard } from "react-icons/go";
 import "./App.css";
-import Button from "./components/Button";
-function ButtonPage() {
+import Button from "../components/Button";
+function App() {
   const foo = () => {
     console.log("hello");
   };
@@ -39,4 +39,4 @@ function ButtonPage() {
   );
 }
 
-export default ButtonPage;
+export default App;
