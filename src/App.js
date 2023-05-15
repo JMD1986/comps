@@ -5,22 +5,22 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Button></Button>
+        <Button>test</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>other test</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>new test</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>hello</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>yes</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>no</Button>
       </div>
     </div>
   );
