@@ -1,42 +1,32 @@
 import { GoBell, GoCloudDownload, GoDashboard } from "react-icons/go";
 import "./App.css";
-import Button from "./components/Button";
-function ButtonPage() {
-  const foo = () => {
-    console.log("hello");
-  };
-
+import Accordion from "./components/Accordion";
+function App() {
+  const items = [
+    {
+      id: "13123",
+      label: "hello",
+      content:
+        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+    },
+    {
+      id: "ASDASD",
+      label: "hello",
+      content:
+        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+    },
+    {
+      id: "asdfasdf",
+      label: "hello",
+      content:
+        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+    },
+  ];
   return (
     <div className="App">
-      <div>
-        <Button primary onClick={foo}>
-          <GoBell />
-          test
-        </Button>
-      </div>
-      <div>
-        <Button className="mb-5" onMouseOver={foo} success rounded outline>
-          <GoCloudDownload />
-          other test
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded>
-          <GoDashboard />
-          new test
-        </Button>
-      </div>
-      <div>
-        <Button primary>hello</Button>
-      </div>
-      <div>
-        <Button warning>yes</Button>
-      </div>
-      <div>
-        <Button>no</Button>
-      </div>
+      <Accordion items={items} />
     </div>
   );
 }
 
-export default ButtonPage;
+export default App;
