@@ -5,21 +5,23 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Button primary warning>
-          test
+        <Button primary>test</Button>
+      </div>
+      <div>
+        <Button success rounded outline>
+          other test
         </Button>
       </div>
       <div>
-        <Button>other test</Button>
+        <Button secondary rounded>
+          new test
+        </Button>
       </div>
       <div>
-        <Button>new test</Button>
+        <Button primary>hello</Button>
       </div>
       <div>
-        <Button>hello</Button>
-      </div>
-      <div>
-        <Button>yes</Button>
+        <Button warning>yes</Button>
       </div>
       <div>
         <Button>no</Button>
