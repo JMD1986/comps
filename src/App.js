@@ -1,6 +1,11 @@
 import "./App.css";
+import { useState } from "react";
 import DropDown from "./components/DropDown";
 function App() {
+  const [selection, setSelection] = useState(null);
+  const handleSelect = (option) => {
+    setSelection(option);
+  };
   const options = [
     {
       label: "Red",
@@ -17,7 +22,11 @@ function App() {
   ];
   return (
     <div className="App">
-      <DropDown options={options} />
+      <DropDown
+        options={options}
+        selection={selection}
+        onSelect={handleSelect}
+      />
     </div>
   );
 }

@@ -1,22 +1,35 @@
 import { useState } from "react";
-function DropDown({ options }) {
+function DropDown({ options, selection, onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
   const [color, setColor] = useState("");
+  const selectOption = (value) => {
+    setIsOpen(false);
+    onSelect(value);
+  };
   const renderedOptions = options.map((option) => {
-    return <div key={option.value}> {option.label}</div>;
+    return (
+      <div onClick={() => selectOption(option)} key={option.value}>
+        {option.label}
+      </div>
+    );
   });
   const handleClick = () => {
     console.log(isOpen);
     setIsOpen(!isOpen);
   };
-  const selectOption = () => {};
+
   const checkState = () => {
-    console.log(options);
+    console.log(color);
   };
+  let content = "Select...";
+  if (selection) {
+    content = selection.label;
+  }
   return (
     <div>
-      <div onClick={handleClick}>Select...</div>
+      <div onClick={handleClick}>{content}</div>
       {isOpen && <div>{renderedOptions}</div>}
+      {/* <button onClick={checkState}>test</button> */}
     </div>
   );
 }
