@@ -22,11 +22,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <DropDown
-        options={options}
-        selection={selection}
-        onSelect={handleSelect}
-      />
+      <DropDown options={options} value={selection} onChange={handleSelect} />
     </div>
   );
 }
