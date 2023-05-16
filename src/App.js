@@ -1,30 +1,23 @@
-import { GoBell, GoCloudDownload, GoDashboard } from "react-icons/go";
 import "./App.css";
-import Accordion from "./components/Accordion";
+import DropDown from "./components/DropDown";
 function App() {
-  const items = [
+  const options = [
     {
-      id: "13123",
-      label: "hello",
-      content:
-        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+      label: "Red",
+      value: "red",
     },
     {
-      id: "ASDASD",
-      label: "hello",
-      content:
-        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+      label: "Blue",
+      value: "blue",
     },
     {
-      id: "asdfasdf",
-      label: "hello",
-      content:
-        "this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. this is some example content. ",
+      label: "Green",
+      value: "green",
     },
   ];
   return (
     <div className="App">
-      <Accordion items={items} />
+      <DropDown options={options} />
     </div>
   );
 }
