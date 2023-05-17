@@ -10,7 +10,7 @@ function App() {
       <Link to="/accordion">go to accordion</Link>
       <Link to="/dropdown">go to dropdown</Link>
       <div>
-        <Route path="/dropdown">
+        <Route path="/">
           <DropDownPage />
         </Route>
         <Route path="/accordion">
