@@ -6,6 +6,7 @@ function Link({ to, children }) {
     event.preventDefault();
     navigate(to);
   };
+  // eslint-disable-next-line jsx-a11y/anchor-is-valid
   return <a onClick={handleClick}>{children}</a>;
 }
 export default Link;

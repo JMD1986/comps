@@ -1,6 +1,5 @@
-import "./App.css";
 import { useState } from "react";
-import DropDown from "./components/DropDown";
+import DropDown from "../components/DropDown";
 function DropDownPage() {
   const [selection, setSelection] = useState(null);
   const handleSelect = (option) => {

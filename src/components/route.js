@@ -3,7 +3,7 @@ import NavigationContext from "../context/navigation";
 
 function Route({ path, children }) {
   const { currentPath } = useContext(NavigationContext);
-  if (currentPath === path) {
+  if (path === currentPath) {
     return children;
   }
   return null;
