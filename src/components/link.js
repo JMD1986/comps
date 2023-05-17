@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import NavigationContext from "../context/navigation";
+import classNames from "classnames";
 function Link({ to, children }) {
   const { navigate } = useContext(NavigationContext);
+  const classes = classNames("text-blue-500");
   const handleClick = (event) => {
     if (event.metaKey || event.ctrlKey) {
       return;
@@ -11,7 +13,7 @@ function Link({ to, children }) {
   };
   // eslint-disable-next-line jsx-a11y/anchor-is-valid
   return (
-    <a href={to} onClick={handleClick}>
+    <a className={classes} href={to} onClick={handleClick}>
       {children}
     </a>
   );
