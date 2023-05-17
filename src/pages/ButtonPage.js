@@ -1,5 +1,4 @@
 import { GoBell, GoCloudDownload, GoDashboard } from "react-icons/go";
-import "./App.css";
 import Button from "../components/Button";
 function ButtonPage() {
   const foo = () => {
