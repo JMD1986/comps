@@ -8,9 +8,9 @@ import DropDownPage from "./pages/DropDownPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
       <Sidebar />
-      <div>
+      <div className="col-span-5">
         <Route path="/">
           <DropDownPage />
         </Route>

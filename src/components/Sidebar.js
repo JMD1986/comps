@@ -8,7 +8,7 @@ function Sidebar() {
   ];
   const renderedLinks = links.map((link) => {
     return (
-      <Link key={link.label} to={link.path}>
+      <Link className="mb-3" key={link.label} to={link.path}>
         {link.label}
       </Link>
     );
