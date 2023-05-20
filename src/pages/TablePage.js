@@ -11,21 +11,26 @@ function TablePage() {
   const config = [
     {
       label: "Name",
-      render: (fruit) => fruit.name,
+      render: (rowData) => rowData.name,
     },
     {
       label: "Color",
-      render: (fruit) => <div className={`p-3 m-2 ${fruit.color}`} />,
+      render: (rowData) => <div className={`p-3 m-2 ${rowData.color}`} />,
     },
     {
       label: "Score",
-      render: (fruit) => fruit.score,
+      render: (rowData) => rowData.score,
+      header: () => <th className="bg-red-500">Score</th>,
     },
   ];
 
+  const keyFn = (fruit) => {
+    return fruit.name;
+  };
+
   return (
     <div>
-      <Table data={data} config={config} />
+      <Table data={data} config={config} keyFn={keyFn} />
     </div>
   );
 }
