@@ -8,6 +8,8 @@ import DropDownPage from "./pages/DropDownPage";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
 import CounterPage from "./pages/CounterPage";
+import Mortgage from "./components/Mortgage";
+import FlightPage from "./pages/FlightPage";
 
 function App() {
   return (
@@ -29,8 +31,14 @@ function App() {
         <Route path="/table">
           <TablePage />
         </Route>
+        <Route path="/mortgage">
+          <Mortgage />
+        </Route>
         <Route path="/counter">
           <CounterPage initialCount={10} />
+        </Route>
+        <Route path="/flight">
+          <FlightPage />
         </Route>
       </div>
     </div>
