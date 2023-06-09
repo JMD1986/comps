@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-export default function Mortgage() {
-  const [setMonthlyPayment, monthlyPayment] = useState(0);
-  const [setTotalInterest, totalInterest] = useState(0);
-  const [setTotalPayment, totalPayment] = useState();
-  const [setLoanAmount, loanAmount] = useState();
-  const [setInterest, interest] = useState();
-  const [setTerm, term] = useState(0);
+function Mortgage() {
+  // const [setLoanAmount, loanAmount] = useState(0);
+  const [interest, setInterest] = useState();
+  const [term, setTerm] = useState(0);
+  const [loanAmount, setLoanAmount] = useState("");
+  const [monthlyPayment, setMonthlyPayment] = useState();
+  const [totalInterest, setTotalInterest] = useState();
+  const [totalPayment, setTotalPayment] = useState();
 
   let numberOfPayments = term * 12;
   let interestRate = totalInterest / 12;
@@ -27,7 +28,7 @@ export default function Mortgage() {
   const TotalInterest = () => {};
   const handleLoan = (event) => {
     event.preventDefault();
-    setLoanAmount(event.target.value);
+    setLoanAmount(1);
   };
   const handleInterest = (event) => {
     event.preventDefault();
@@ -76,3 +77,4 @@ export default function Mortgage() {
     </div>
   );
 }
+export default Mortgage;
