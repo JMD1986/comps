@@ -1,29 +1,54 @@
 import React from "react";
-
+import { useState } from "react";
 function ToDoList() {
+  const [list, setList] = useState([]);
+  const [newTask, setNewTask] = useState("");
+  let id = 0;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setList(
+      list.concat({
+        id: id++,
+        label: newTask.trim(),
+      })
+    );
+    setNewTask("");
+  };
+  let fullList = list.map(({ id, label }) => (
+    <li key={id}>
+      <span>{label}</span>
+      <button
+        onClick={() => {
+          setList(list.filter((task) => task.id !== id));
+        }}
+      >
+        Delete
+      </button>
+    </li>
+  ));
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    setNewTask(event.target.value);
+  };
+  const checkState = () => {
+    console.log(list);
+    console.log(newTask);
+  };
+
   return (
     <div>
-      <h1>Todo List</h1>
-      <div>
-        <input type="text" placeholder="Add your task" />
+      <form onSubmit={handleSubmit}>
+        <h1>Todo List</h1>
         <div>
-          <button>Submit</button>
+          <input type="text" onChange={handleChange} value={newTask} />
+          <div>
+            <button>Submit</button>
+          </div>
         </div>
-      </div>
-      <ul>
-        <li>
-          <span>Walk the dog</span>
-          <button>Delete</button>
-        </li>
-        <li>
-          <span>Water the plants</span>
-          <button>Delete</button>
-        </li>
-        <li>
-          <span>Wash the dishes</span>
-          <button>Delete</button>
-        </li>
-      </ul>
+        <ul>{fullList}</ul>
+      </form>
+      <button onClick={checkState}>check</button>
     </div>
   );
 }
