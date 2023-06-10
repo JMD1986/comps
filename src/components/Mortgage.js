@@ -14,7 +14,7 @@ function Mortgage() {
 
   const calculateMonthlyPayment = () => {
     let payment =
-      loanAmount(interestRate(1 + interestRate) ** numberOfPayments) /
+      (loanAmount * (interestRate * (1 + interestRate) ** numberOfPayments)) /
       ((1 + interestRate) ** numberOfPayments - 1);
     return payment;
   };
@@ -38,10 +38,14 @@ function Mortgage() {
     event.preventDefault();
     setTerm(event.target.value);
   };
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setMonthlyPayment(calculateMonthlyPayment());
+    setTotalPayment(calculateTotalPayment);
+  };
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label>Loan Amount</label>
 
@@ -70,10 +74,15 @@ function Mortgage() {
             onChange={handleTerm}
           />
         </div>
+        <button>how much is it?</button>
       </form>
-      <MonthlyPayment />
-      <TotalPayment />
-      <TotalInterest />
+      <div>{loanAmount}</div>
+      <div></div>
+      {interest}
+      <div></div>
+      {term}
+      your monthly payment is {monthlyPayment} and your total payment is{" "}
+      {totalPayment}
     </div>
   );
 }

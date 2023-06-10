@@ -10,6 +10,7 @@ function Sidebar() {
     { label: "Counter", path: "/counter" },
     { label: "Mortgage", path: "/mortgage" },
     { label: "Flight", path: "/flight" },
+    { label: "Like Button", path: "/likeButton" },
   ];
   const renderedLinks = links.map((link) => {
     return (

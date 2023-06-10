@@ -10,6 +10,7 @@ import TablePage from "./pages/TablePage";
 import CounterPage from "./pages/CounterPage";
 import Mortgage from "./components/Mortgage";
 import FlightPage from "./pages/FlightPage";
+import LikeButton from "./components/LikeButton";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/flight">
           <FlightPage />
+        </Route>
+        <Route path="/likeButton">
+          <LikeButton />
         </Route>
       </div>
     </div>
