@@ -13,6 +13,7 @@ function Sidebar() {
     { label: "Like Button", path: "/likeButton" },
     { label: "Lights", path: "/lights" },
     { label: "Stars", path: "/stars" },
+    { label: "To Do List", path: "/toDo" },
   ];
   const renderedLinks = links.map((link) => {
     return (

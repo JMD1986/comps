@@ -13,6 +13,7 @@ import FlightPage from "./pages/FlightPage";
 import LikeButton from "./components/LikeButton";
 import ReversingLights from "./components/ReversingLights";
 import StarRatingPage from "./pages/StarRatingPage";
+import ToDoListPage from "./pages/ToDoListPage";
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route path="/stars">
           <StarRatingPage />
+        </Route>
+        <Route path="/toDo">
+          <ToDoListPage />
         </Route>
       </div>
     </div>
