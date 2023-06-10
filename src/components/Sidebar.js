@@ -14,6 +14,7 @@ function Sidebar() {
     { label: "Lights", path: "/lights" },
     { label: "Stars", path: "/stars" },
     { label: "To Do List", path: "/toDo" },
+    { label: "Traffic Light", path: "/trafficLight" },
   ];
   const renderedLinks = links.map((link) => {
     return (

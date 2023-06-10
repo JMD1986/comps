@@ -14,6 +14,7 @@ import LikeButton from "./components/LikeButton";
 import ReversingLights from "./components/ReversingLights";
 import StarRatingPage from "./pages/StarRatingPage";
 import ToDoListPage from "./pages/ToDoListPage";
+import TrafficLightPage from "./pages/TrafficLightPage";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
         </Route>
         <Route path="/toDo">
           <ToDoListPage />
+        </Route>
+        <Route path="/trafficLight">
+          <TrafficLightPage />
         </Route>
       </div>
     </div>
