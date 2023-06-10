@@ -12,6 +12,7 @@ function Sidebar() {
     { label: "Flight", path: "/flight" },
     { label: "Like Button", path: "/likeButton" },
     { label: "Lights", path: "/lights" },
+    { label: "Stars", path: "/stars" },
   ];
   const renderedLinks = links.map((link) => {
     return (

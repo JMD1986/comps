@@ -12,6 +12,7 @@ import Mortgage from "./components/Mortgage";
 import FlightPage from "./pages/FlightPage";
 import LikeButton from "./components/LikeButton";
 import ReversingLights from "./components/ReversingLights";
+import StartRatings from "./components/StartRatings";
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
         </Route>
         <Route path="/lights">
           <ReversingLights />
+        </Route>
+        <Route path="/stars">
+          <StartRatings />
         </Route>
       </div>
     </div>
