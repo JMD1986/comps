@@ -11,6 +11,7 @@ import CounterPage from "./pages/CounterPage";
 import Mortgage from "./components/Mortgage";
 import FlightPage from "./pages/FlightPage";
 import LikeButton from "./components/LikeButton";
+import ReversingLights from "./components/ReversingLights";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path="/likeButton">
           <LikeButton />
+        </Route>
+        <Route path="/lights">
+          <ReversingLights />
         </Route>
       </div>
     </div>

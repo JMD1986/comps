@@ -5,7 +5,6 @@ import "./styles.css";
 import { HeartIcon, SpinnerIcon } from "../icons/icons";
 import { useState } from "react";
 function LikeButton() {
-  const [response, setResponse] = useState("");
   const [liked, setLiked] = useState(false);
   const [isPending, setIsPending] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -39,13 +38,6 @@ function LikeButton() {
       setIsPending(false);
     }
   }
-  const onClick = () => {
-    console.log("click");
-
-    likeUnlikeAction();
-  }; // URL: https://www.greatfrontend.com/api/questions/like-button
-  // HTTP Method: POST
-  // Content Type: json
 
   function classNames(...args) {
     return args.filter(Boolean).join(" ");

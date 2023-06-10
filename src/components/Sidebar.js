@@ -11,6 +11,7 @@ function Sidebar() {
     { label: "Mortgage", path: "/mortgage" },
     { label: "Flight", path: "/flight" },
     { label: "Like Button", path: "/likeButton" },
+    { label: "Lights", path: "/lights" },
   ];
   const renderedLinks = links.map((link) => {
     return (
