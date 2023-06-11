@@ -15,6 +15,7 @@ function Sidebar() {
     { label: "Stars", path: "/stars" },
     { label: "To Do List", path: "/toDo" },
     { label: "Traffic Light", path: "/trafficLight" },
+    { label: "Check Boxes", path: "/checkBoxes" },
   ];
   const renderedLinks = links.map((link) => {
     return (

@@ -51,7 +51,7 @@ function ReversingLights() {
     );
   };
   return (
-    <div className="squareWrapper">
+    <div className="squarewrapper">
       <div
         className="grid"
         style={{

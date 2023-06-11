@@ -15,6 +15,7 @@ import ReversingLights from "./components/ReversingLights";
 import StarRatingPage from "./pages/StarRatingPage";
 import ToDoListPage from "./pages/ToDoListPage";
 import TrafficLightPage from "./pages/TrafficLightPage";
+import CheckBoxesPage from "./pages/CheckBoxesPage";
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
         </Route>
         <Route path="/trafficLight">
           <TrafficLightPage />
+        </Route>
+        <Route path="/checkBoxes">
+          <CheckBoxesPage />
         </Route>
       </div>
     </div>
