@@ -16,6 +16,7 @@ import StarRatingPage from "./pages/StarRatingPage";
 import ToDoListPage from "./pages/ToDoListPage";
 import TrafficLightPage from "./pages/TrafficLightPage";
 import CheckBoxesPage from "./pages/CheckBoxesPage";
+import JobBoardPage from "./pages/JobBoardPage";
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
         </Route>
         <Route path="/checkBoxes">
           <CheckBoxesPage />
+        </Route>
+        <Route path="/jobBoard">
+          <JobBoardPage />
         </Route>
       </div>
     </div>
