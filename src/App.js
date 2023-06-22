@@ -17,6 +17,7 @@ import ToDoListPage from "./pages/ToDoListPage";
 import TrafficLightPage from "./pages/TrafficLightPage";
 import CheckBoxesPage from "./pages/CheckBoxesPage";
 import JobBoardPage from "./pages/JobBoardPage";
+import ContactFormPage from "./pages/ContactFormPage";
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
         </Route>
         <Route path="/jobBoard">
           <JobBoardPage />
+        </Route>
+        <Route path="/contactForm">
+          <ContactFormPage />
         </Route>
       </div>
     </div>

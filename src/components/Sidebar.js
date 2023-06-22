@@ -17,6 +17,7 @@ function Sidebar() {
     { label: "Traffic Light", path: "/trafficLight" },
     { label: "Check Boxes", path: "/checkBoxes" },
     { label: "Job Board", path: "/jobBoard" },
+    { label: "Contact Form", path: "/contactForm" },
   ];
   const renderedLinks = links.map((link) => {
     return (
