@@ -18,6 +18,7 @@ import TrafficLightPage from "./pages/TrafficLightPage";
 import CheckBoxesPage from "./pages/CheckBoxesPage";
 import JobBoardPage from "./pages/JobBoardPage";
 import ContactFormPage from "./pages/ContactFormPage";
+import ProgressBarPage from "./pages/ProgressBarPage";
 
 function App() {
   return (
@@ -71,6 +72,9 @@ function App() {
         </Route>
         <Route path="/contactForm">
           <ContactFormPage />
+        </Route>
+        <Route path="/progressBar">
+          <ProgressBarPage />
         </Route>
       </div>
     </div>

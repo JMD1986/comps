@@ -18,6 +18,7 @@ function Sidebar() {
     { label: "Check Boxes", path: "/checkBoxes" },
     { label: "Job Board", path: "/jobBoard" },
     { label: "Contact Form", path: "/contactForm" },
+    { label: "Progress Bar", path: "/progressBar" },
   ];
   const renderedLinks = links.map((link) => {
     return (
