@@ -19,6 +19,7 @@ function Sidebar() {
     { label: "Job Board", path: "/jobBoard" },
     { label: "Contact Form", path: "/contactForm" },
     { label: "Progress Bar", path: "/progressBar" },
+    { label: "Tic Tac Toe", path: "/ticTacToe" },
   ];
   const renderedLinks = links.map((link) => {
     return (

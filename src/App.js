@@ -19,6 +19,7 @@ import CheckBoxesPage from "./pages/CheckBoxesPage";
 import JobBoardPage from "./pages/JobBoardPage";
 import ContactFormPage from "./pages/ContactFormPage";
 import ProgressBarPage from "./pages/ProgressBarPage";
+import TicTacToePage from "./pages/TicTacToePage";
 
 function App() {
   return (
@@ -75,6 +76,9 @@ function App() {
         </Route>
         <Route path="/progressBar">
           <ProgressBarPage />
+        </Route>
+        <Route path="/ticTacToe">
+          <TicTacToePage />
         </Route>
       </div>
     </div>
