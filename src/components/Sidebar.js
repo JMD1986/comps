@@ -20,6 +20,7 @@ function Sidebar() {
     { label: "Contact Form", path: "/contactForm" },
     { label: "Progress Bar", path: "/progressBar" },
     { label: "Tic Tac Toe", path: "/ticTacToe" },
+    { label: "StopWatch", path: "/stopWatch" },
   ];
   const renderedLinks = links.map((link) => {
     return (

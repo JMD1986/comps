@@ -20,6 +20,7 @@ import JobBoardPage from "./pages/JobBoardPage";
 import ContactFormPage from "./pages/ContactFormPage";
 import ProgressBarPage from "./pages/ProgressBarPage";
 import TicTacToePage from "./pages/TicTacToePage";
+import StopWatchPage from "./pages/StopWatchPage";
 
 function App() {
   return (
@@ -79,6 +80,9 @@ function App() {
         </Route>
         <Route path="/ticTacToe">
           <TicTacToePage />
+        </Route>
+        <Route path="/stopWatch">
+          <StopWatchPage />
         </Route>
       </div>
     </div>
