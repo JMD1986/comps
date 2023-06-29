@@ -91,7 +91,7 @@ function Game() {
     if (move > 0) {
       description = "go to move #" + move;
     } else {
-      description = "got to game start";
+      description = "go to game start";
     }
     return (
       <li key={move}>
