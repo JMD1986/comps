@@ -21,6 +21,7 @@ function Sidebar() {
     { label: "Progress Bar", path: "/progressBar" },
     { label: "Tic Tac Toe", path: "/ticTacToe" },
     { label: "StopWatch", path: "/stopWatch" },
+    { label: "NumberTable", path: "/numberTable" },
   ];
   const renderedLinks = links.map((link) => {
     return (
