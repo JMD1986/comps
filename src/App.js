@@ -22,6 +22,7 @@ import ProgressBarPage from "./pages/ProgressBarPage";
 import TicTacToePage from "./pages/TicTacToePage";
 import StopWatchPage from "./pages/StopWatchPage";
 import NumberTablePage from "./pages/NumberTablePage";
+import WackAmolePage from "./pages/WackAmolePage";
 
 function App() {
   return (
@@ -87,6 +88,9 @@ function App() {
         </Route>
         <Route path="/numberTable">
           <NumberTablePage />
+        </Route>
+        <Route path="/wackAMole">
+          <WackAmolePage />
         </Route>
       </div>
     </div>

@@ -22,6 +22,7 @@ function Sidebar() {
     { label: "Tic Tac Toe", path: "/ticTacToe" },
     { label: "StopWatch", path: "/stopWatch" },
     { label: "NumberTable", path: "/numberTable" },
+    { label: "Wack-a-mole", path: "/wackAMole" },
   ];
   const renderedLinks = links.map((link) => {
     return (
